@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taqdimot</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+   <div class="loding">
+    <div class="loader-wrapper">
+      <span class="loader-letter">L</span>
+      <span class="loader-letter">A</span>
+      <span class="loader-letter">D</span>
+      <span class="loader-letter">I</span>
+      <span class="loader-letter">N</span>
+      <span class="loader-letter">G</span>
+      <span class="loader-letter">.</span>
+
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+
+  </div>
+  <header>
+    <nav class="max-w-[1440px] mx-auto py-4 px-6 flex items-center justify-between">
+      <a href="/"><img src="../images/55234423 1.svg" alt="Logo" /></a>
+      <ul class="flex items-center gap-4 max-[896px]:hidden">
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+          class="inline-flex items-center justify-center text-white bg-[#FFD600] box-border border rounded-[20px] border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+          type="button">
+          Направления
+          <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+            height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m19 9-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="dropdown" class="z-10 hidden bg-white rounded-[20px] shadow-lg w-44">
+          <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a href="./sang.html"
+                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Экскурсии
+                в Санкт-Петербурге</a>
+            </li>
+            <li>
+              <a href="./artrus.html"
+                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Экскурсии
+                в Калининграде</a>
+            </li>
+            <li>
+              <a href="./abaut.html"
+                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Экскурсии
+                в Мурманске</a>
+            </li>
+
+          </ul>
+        </div>
+        <li>
+          <a href="./new.html">О сервисе</a>
+        </li>
+        <li>
+          <a href="./blog.html">Блог</a>
+        </li>
+        <li>
+          <a href="./contact.html">Довольные клиенты</a>
+        </li>
+      </ul>
+
+      <div class="text-center">
+        <button
+          class="inline-flex items-center justify-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium sm:flex md:hidden shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+          type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
+          aria-controls="drawer-navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- drawer component -->
+      <div id="drawer-navigation"
+        class="fixed top-0 left-0 z-40 h-screen  overflow-y-auto transition-transform -translate-x-full w-80"
+        tabindex="-1" aria-labelledby="drawer-navigation-label">
+        <div class=" pb-4 flex items-center">
+          <div class="flex flex-col h-full w-full bg-white text-black font-sans">
+
+            <img class="pl-[30px] w-[140px] h-[140px]" src="../images/55234423 1.svg" alt="">
+
+            <div class="flex flex-col h-full bg-white text-black font-sans">
+              <nav class="flex-1 px-6 py-12 space-y-1">
+
+                <a href="/" class="group flex flex-col p-4 rounded-3xl transition-all hover:bg-gray-50">
+                  <span
+                    class="text-xs font-bold text-[#FFD700] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">01.
+                    Explore</span>
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-4xl font-bold tracking-tight transition-transform duration-500 group-hover:translate-x-2 text-black">Home</span>
+                    <svg
+                      class="w-8 h-8 opacity-0 -translate-x-10 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-[#FFD700]"
+                      fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="./new.html" class="group flex flex-col p-4 rounded-3xl transition-all hover:bg-gray-50">
+                  <span
+                    class="text-xs font-bold text-[#FFD700] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">02.
+                    About</span>
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-4xl font-bold tracking-tight transition-transform duration-500 group-hover:translate-x-2 text-black">сервисе</span>
+                    <svg
+                      class="w-8 h-8 opacity-0 -translate-x-10 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-[#FFD700]"
+                      fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="./blog.html" class="group flex flex-col p-4 rounded-3xl transition-all hover:bg-gray-50">
+                  <span
+                    class="text-xs font-bold text-[#FFD700] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">03.
+                    News</span>
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-4xl font-bold tracking-tight transition-transform duration-500 group-hover:translate-x-2 text-black">Блог</span>
+                    <svg
+                      class="w-8 h-8 opacity-0 -translate-x-10 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-[#FFD700]"
+                      fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="./contact.html" class="group flex flex-col p-4 rounded-3xl transition-all hover:bg-gray-50">
+                  <span
+                    class="text-xs font-bold text-[#FFD700] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">04.
+                    Reviews</span>
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-4xl font-bold tracking-tight transition-transform duration-500 group-hover:translate-x-2 text-black">Клиенты</span>
+                    <svg
+                      class="w-8 h-8 opacity-0 -translate-x-10 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-[#FFD700]"
+                      fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                  </div>
+                </a>
+              </nav>
+
+              <div class="p-8 space-y-8 bg-gray-50/50">
+                <div class="space-y-4">
+                  <p class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400">Quick
+                    Contact</p>
+                  <div class="flex flex-col gap-2">
+                    <a href="tel:+998901234567" class="text-lg font-bold hover:text-[#FFD700] transition-colors">+998 90
+                      123 45 67</a>
+                    <a href="mailto:info@tenloc.com"
+                      class="text-gray-500 border-b border-gray-200 w-fit pb-1">info@tenloc.com</a>
+                  </div>
+                </div>
+
+                <!-- Bron qilish tugmasi -->
+                <a href="booking.html"
+                  class="block w-full group relative bg-black text-white py-5 rounded-[24px] font-bold overflow-hidden shadow-2xl active:scale-[0.98] transition-all text-center">
+                  <span class="relative z-10">Забронировать тур</span>
+                  <div
+                    class="absolute inset-0 bg-[#FFD700] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                  </div>
+                  <span
+                    class="absolute inset-0 flex items-center justify-center text-black font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">Забронировать
+                    тур</span>
+                </a>
+
+                <!-- Social Links -->
+                <div class="flex justify-between items-center pt-4">
+                  <div class="flex gap-4">
+                    <a href="https://t.me/tenloc" target="_blank"
+                      class="w-8 h-8 rounded-full bg-white border border-gray-100 flex items-center justify-center text-xs font-bold hover:bg-black hover:text-white transition-all shadow-sm text-black">TG</a>
+                    <a href="https://instagram.com/tenloc" target="_blank"
+                      class="w-8 h-8 rounded-full bg-white border border-gray-100 flex items-center justify-center text-xs font-bold hover:bg-black hover:text-white transition-all shadow-sm text-black">IG</a>
+                  </div>
+                  <span class="text-[10px] text-gray-300 font-medium italic">© 2026 Tenloc
+                    Travel</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+            class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center">
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18 17.94 6M18 18 6.06 6" />
+            </svg>
+            <span class="sr-only">Close menu</span>
+          </button>
+        </div>
+
+      </div>
+
+
+
+
+      <!-- drawer component -->
+      <div id="drawer-navigation"
+        class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-neutral-primary-soft w-80 border-e border-default"
+        tabindex="-1" aria-labelledby="drawer-navigation-label">
+        <div class="border-b border-default pb-4 flex items-center">
+          <a href="https://flowbite.com/" class="flex items-center space-x-2 rtl:space-x-reverse">
+            <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 w-6" alt="Flowbite Logo" />
+            <span class="self-center text-lg font-semibold whitespace-nowrap text-heading">Flowbite</span>
+          </a>
+          <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+            class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center">
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18 17.94 6M18 18 6.06 6" />
+            </svg>
+            <span class="sr-only">Close menu</span>
+          </button>
+        </div>
+        <div class="py-5 overflow-y-auto">
+          <ul class="space-y-2 font-medium">
+            <li>
+              <a href="#"
+                class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+                <svg class="w-5 h-5 transition duration-75 group-hover:text-fg-brand" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6.025A7.5 7.5 0 1 0 17.975 14H10V6.025Z" />
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13.5 3c-.169 0-.334.014-.5.025V11h7.975c.011-.166.025-.331.025-.5A7.5 7.5 0 0 0 13.5 3Z" />
+                </svg>
+                <span class="ms-3">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <button type="button"
+                class="flex items-center w-full justify-between px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+                aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                <svg class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-fg-brand" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+                </svg>
+                <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">E-commerce</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m19 9-7 7-7-7" />
+                </svg>
+              </button>
+              <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                <li>
+                  <a href="#"
+                    class="pl-10 flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">Products</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="pl-10 flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">Billing</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="pl-10 flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">Invoice</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+                <svg class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-fg-brand" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 5v14M9 5v14M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" />
+                </svg>
+                <span class="flex-1 ms-3 whitespace-nowrap">Kanban</span>
+                <span
+                  class="bg-neutral-secondary-medium border border-default-medium text-heading text-xs font-medium px-1.5 py-0.5 rounded-sm">Pro</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+                <svg class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-fg-brand" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 13h3.439a.991.991 0 0 1 .908.6 3.978 3.978 0 0 0 7.306 0 .99.99 0 0 1 .908-.6H20M4 13v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6M4 13l2-9h12l2 9M9 7h6m-7 3h8" />
+                </svg>
+                <span class="flex-1 ms-3 whitespace-nowrap">Inbox</span>
+                <span
+                  class="inline-flex items-center justify-center w-4.5 h-4.5 ms-2 text-xs font-medium text-fg-danger-strong bg-danger-soft border border-danger-subtle rounded-full">2</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+                <svg class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-fg-brand" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                    d="M16 19h4a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-2m-2.236-4a3 3 0 1 0 0-4M3 18v-1a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm8-10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>
+                <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+                <svg class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-fg-brand" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2 .917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8h12Z" />
+                </svg>
+                <span class="flex-1 ms-3 whitespace-nowrap">Products</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+                <svg class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-fg-brand" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M16 12H4m12 0-4 4m4-4-4-4m3-4h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2" />
+                </svg>
+                <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="bg-white py-20 px-6 font-sans text-black">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="mb-16">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-10 h-1px bg-[#FFD700]"></div>
+          <span class="text-sm font-bold uppercase tracking-[0.3em] text-gray-400">Contact Us</span>
+        </div>
+        <h2 class="text-5xl md:text-7xl font-black italic tracking-tighter leading-none mb-6">
+          GET IN <span class="text-[#FFD700]">TOUCH</span> WITH US
+        </h2>
+        <p class="max-w-2xl text-gray-500 text-lg">
+          Savollaringiz bormi? Bizning jamoamiz sizga har qanday ekskursiya yoki xizmat bo'yicha yordam berishga tayyor.
+          Quyidagi forma orqali yozing yoki to'g'ridan-to'g'ri bog'laning.
+          <br>
+          <br>
+          Саволларингиз борми? Bizning jamoamiz sizga har qanday ekskursiya yoki xizmat bo'yicha yordam berishga tayyor.
+          Quyidagi forma orqali yozing yoki to'g'ridan-to'g'ri bog'laning.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+        <div class="lg:col-span-5 space-y-12">
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div
+              class="group p-8 border border-gray-100 rounded-[32px] hover:border-[#FFD700] transition-all duration-500">
+              <div
+                class="w-12 h-12 bg-black rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6 text-[#FFD700]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                  </path>
+                </svg>
+              </div>
+              <h4 class="text-sm font-bold text-gray-400 uppercase mb-2">Телефон</h4>
+              <p class="text-xl font-bold">+998 90 123 45 67</p>
+            </div>
+
+            <div
+              class="group p-8 border border-gray-100 rounded-[32px] hover:border-[#FFD700] transition-all duration-500">
+              <div
+                class="w-12 h-12 bg-black rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6 text-[#FFD700]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                  </path>
+                </svg>
+              </div>
+              <h4 class="text-sm font-bold text-gray-400 uppercase mb-2">Электронная почта</h4>
+              <p class="text-xl font-bold">tenloc@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="p-10 bg-gray-50 rounded-[40px] space-y-8">
+            <div>
+              <h4 class="text-xs font-black uppercase tracking-widest text-[#FFD700] mb-4">Наш офис</h4>
+              <p class="text-2xl font-bold leading-tight">O'zbekiston, Toshkent shahri,<br>Bektemir 1-uy
+              </p>
+            </div>
+            <div class="flex justify-between items-end border-t border-gray-200 pt-8">
+              <div>
+                <h4 class="text-xs font-black uppercase tracking-widest text-gray-400 mb-2"> Рабочее время</h4>
+                <p class="font-bold">Mon - Sat: 09:00 - 18:00</p>
+              </div>
+              <div class="flex gap-4">
+                <a href="#"
+                  class="w-10 h-10 rounded-full bg-white flex items-center justify-center font-bold hover:bg-[#FFD700] transition-all">TG</a>
+                <a href="#"
+                  class="w-10 h-10 rounded-full bg-white flex items-center justify-center font-bold hover:bg-[#FFD700] transition-all">IG</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="lg:col-span-7 bg-white border border-gray-100 p-10 md:p-16 rounded-[48px] shadow-2xl shadow-gray-200/50">
+          <form action="#" class="space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="space-y-2">
+                <label class="text-xs font-bold uppercase tracking-widest text-gray-400 ml-4">Полное имя</label>
+                <input type="text" placeholder="Sardor"
+                  class="w-full bg-gray-50 border-none rounded-2xl p-5 focus:ring-2 focus:ring-[#FFD700] transition-all outline-none">
+              </div>
+              <div class="space-y-2">
+                <label class="text-xs font-bold uppercase tracking-widest text-gray-400 ml-4">Адрес электронной
+                  почты</label>
+                <input type="email" placeholder="Khsardor@gmail.com"
+                  class="w-full bg-gray-50 border-none rounded-2xl p-5 focus:ring-2 focus:ring-[#FFD700] transition-all outline-none">
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <label class="text-xs font-bold uppercase tracking-widest text-gray-400 ml-4">Предмет</label>
+              <select
+                class="w-full bg-gray-50 border-none rounded-2xl p-5 focus:ring-2 focus:ring-[#FFD700] transition-all outline-none appearance-none cursor-pointer">
+                <option>Общий запрос</option>
+                <option>Служба поддержки бронирования</option>
+                <option>Партнерство</option>
+              </select>
+            </div>
+
+            <div class="space-y-2">
+              <label class="text-xs font-bold uppercase tracking-widest text-gray-400 ml-4">Ваше сообщение</label>
+              <textarea rows="5" placeholder="Qanday yordam bera olamiz?"
+                class="w-full bg-gray-50 border-none rounded-3xl p-5 focus:ring-2 focus:ring-[#FFD700] transition-all outline-none resize-none"></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full group relative bg-black text-white py-6 rounded-2xl font-black text-lg overflow-hidden transition-all active:scale-[0.98]">
+              <span class="relative z-10">ОТПРАВИТЬ СООБЩЕНИЕ СЕЙЧАС</span>
+              <div
+                class="absolute inset-0 bg-[#FFD700] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
+              </div>
+              <span
+                class="absolute inset-0 flex items-center justify-center text-black font-black opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">ОТПРАВИТЬ
+              </span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="mt-20 w-full h-[450px] bg-gray-100 rounded-[48px] overflow-hidden relative group cursor-pointer">
+        <div class="w-full h-full 
+           bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700">
+          <img src="../images/home.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+</body>
+
+</html>
