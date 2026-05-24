@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="loding">
+    <div class="loding flex">
         <div class="loader-wrapper">
             <span class="loader-letter">L</span>
             <span class="loader-letter">A</span>
@@ -98,7 +98,6 @@
                         <div class="flex flex-col h-full bg-white text-black font-sans">
                             <nav class="flex-1 px-6 py-12 space-y-1">
 
-                                <!-- Home sahifasi -->
                                 <a href="/" class="group flex flex-col p-4 rounded-3xl transition-all hover:bg-gray-50">
                                     <span
                                         class="text-xs font-bold text-[#FFD700] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">01.
@@ -584,7 +583,7 @@
                     alt="City view">
             </div>
             <div class="md:w-1/2 space-y-6">
-                <h2 class="text-3xl font-extrabold leading-tight">Эксклюзивы <br> от лучших гидов</h2>
+                <h2 class="text-3xl font-extrabold leading-tight">Eksklyuzivlar <br> eng yaxshi qo'llanmalardan</h2>
                 <div class="text-gray-500 text-sm space-y-4 leading-relaxed">
                     <p>Rossiya noyob va eksklyuziv ta'tillar uchun ko'plab joylarni taklif etadi. Biroq, tabiiy
                         mo''jizalarimizning katta qismi ko'pchilik sayyohlar uchun mavjud emas.</p>
@@ -671,29 +670,30 @@
     <section class="max-w-7xl mx-auto px-6 py-20 bg-[#fafafa] rounded-[50px]">
         <div class="flex flex-col lg:flex-row gap-16">
             <div class="lg:w-2/3">
-                <h2 class="text-3xl font-extrabold mb-10">Популярные вопросы</h2>
+                <h2 class="text-3xl font-extrabold mb-10">Tez-tez so'raladigan savollar</h2>
 
                 <div class="space-y-4">
                     <div class="border-b border-gray-200 pb-6">
                         <button
                             class="w-full flex justify-between items-center text-left font-bold text-lg hover:text-gray-600">
-                            Когда лучше приезжать в Санкт-Петербург?
+                            Sankt-Peterburgga tashrif buyurish uchun eng yaxshi vaqt qachon?
                             <span
                                 class="bg-gray-100 w-8 h-8 rounded-full flex items-center justify-center text-gray-400">−</span>
                         </button>
                         <div class="mt-4 text-gray-500 text-sm leading-relaxed space-y-4">
-                            <p>В Северную столицу можно ехать в любое время года, в каждое из них город по-особенному
-                                прекрасен. Но всё-таки высоким туристическим сезоном считается лето в период белых
-                                ночей, майские и новогодние каникулы.</p>
-                            <p>Белые ночи здесь можно наблюдать с конца мая до середины июля. Лето в Питере — это не
-                                только белые ночи, но и множество интересных экскурсий, фестивалей и пеших прогулок.</p>
+                            <p>Shimoliy poytaxtga yilning istalgan vaqtida tashrif buyurish mumkin; shahar ayniqsa
+                                istalgan vaqtda go'zal. Biroq, sayyohlik mavsumining eng yuqori cho'qqisi yoz, oq
+                                tunlar, may bayramlari va Yangi yil bayramlari hisoblanadi.</p>
+                            <p>Bu yerda may oyining oxiridan iyul oyining o'rtalarigacha oq tunlarni kuzatish mumkin.
+                                Sankt-Peterburgdagi yoz nafaqat oq tunlarni, balki ko'plab qiziqarli ekskursiyalar,
+                                festivallar va piyoda sayohatlar imkoniyatlarini ham anglatadi.</p>
                         </div>
                     </div>
 
                     <div class="border-b border-gray-200 py-6">
                         <button
                             class="w-full flex justify-between items-center text-left font-bold text-lg hover:text-gray-600">
-                            Что привезти из Санкт-Петербурга в подарок?
+                            Sankt-Peterburgdan sovg'a sifatida nimani olib kelish kerak?
                             <span
                                 class="bg-gray-100 w-8 h-8 rounded-full flex items-center justify-center text-gray-400">+</span>
                         </button>
@@ -702,7 +702,7 @@
                     <div class="border-b border-gray-200 py-6">
                         <button
                             class="w-full flex justify-between items-center text-left font-bold text-lg hover:text-gray-600">
-                            Сколько добираться до Санкт-Петербурга из Москвы?
+                            Moskvadan Sankt-Peterburgga borish uchun qancha vaqt ketadi?
                             <span
                                 class="bg-gray-100 w-8 h-8 rounded-full flex items-center justify-center text-gray-400">+</span>
                         </button>
@@ -729,9 +729,10 @@
                 </div>
 
                 <div class="relative z-10 p-10 md:p-20 max-w-2xl">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Подпишитесь <br> на нашу рассылку
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Obuna bo'lish <br> bizning axborot
+                        byulletenimizga
                     </h2>
-                    <p class="text-slate-600 mb-8 text-lg">Подписывайтесь на удобный для Вас мессенджер</p>
+                    <p class="text-slate-600 mb-8 text-lg">Siz uchun qulay bo'lgan messenjerga obuna bo'ling</p>
 
                     <div class="flex flex-wrap gap-4">
                         <a href="#"
@@ -749,8 +750,8 @@
                     </div>
 
                     <p class="mt-12 text-xs text-slate-500 max-w-sm leading-relaxed">
-                        При переходе в одну из указанных социальных сетей, вы автоматически соглашаетесь с <a href="#"
-                            class="underline underline-offset-2">политикой конфиденциальности</a>
+                        Belgilangan ijtimoiy tarmoqlardan biriga o'tish orqali siz avtomatik ravishda rozilik bildirasiz
+                        <a href="#" class="underline underline-offset-2">Maxfiylik siyosati</a>
                     </p>
                 </div>
             </div>
@@ -856,6 +857,7 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="../js/artus.js"></script>
 </body>
 
 </html>

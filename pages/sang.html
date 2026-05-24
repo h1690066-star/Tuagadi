@@ -7,12 +7,13 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="../css/blog.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="loding">
+    <div class="loding flex">
         <div class="loader-wrapper">
             <span class="loader-letter">L</span>
             <span class="loader-letter">A</span>
@@ -284,7 +285,7 @@
         </section>
     </main>
     <section>
-        <div class="container mx-auto pt-[50px] max-w-[1110px] block md:flex gap-[40px]">
+        <div class="container mx-auto pt-[50px] max-w-[1110px] block md:flex gap-[40px]" data-aos="zoom-in-down">
             <h2 class="text-[#252525] text-[36px] text-2xl md:text-4xl font-bold text-gray-900 mb-2">Ekskursiyalar</h2>
             <form action="#">
                 <input placeholder="Выберите город " class="border-hidden" type="text">
@@ -292,11 +293,10 @@
             </form>
         </div>
         <div class="container max-w-[1110px] mx-auto pt-[50px] grid grid-cols-1 md:grid-cols-3 gap-[40px]">
-            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans">
+            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans"
+                data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="relative">
-                    <img class="w-full h-64 object-cover"
-                        src="../images/view-peter-paul-fortress-from-trinity-bridge-summer-evening-lantern-st-petersburg 1.svg"
-                        alt="Saint Petersburg">
+                    <img class="w-full h-64 object-cover" src="../images-2/Rectangle 65 (2).png" alt="Saint Petersburg">
                     <button class="absolute top-4 right-4 p-[10px] ">
                         <div class="heart-container" title="Like">
                             <input type="checkbox" class="checkbox" id="Give-It-An-Id">
@@ -330,7 +330,8 @@
                     </h2>
                     <p class="text-gray-500 text-sm leading-relaxed mb-6">
                         Ermitaj muzeyiga ikki soatlik mini-guruhli sayohat — Qishki saroy tarixi va G'arbiy Yevropa
-                        ustalarining durdona asarlari.
+                        rassomlarining
+                        durdona asarlari.
                     </p>
 
                     <div class="border-t border-gray-100 mb-6"></div>
@@ -343,7 +344,7 @@
 
                             <button
                                 class=" flex items-center justify-between w-full p-[5px] border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50 transition">
-                                Vaqt tanlash
+                                Выбрать время
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2 ml-2" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -351,91 +352,23 @@
                                 </svg>
                             </button>
                         </div>
-                        <button class="bg-gray-100 p-6 rounded-full hover:bg-gray-200 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-800" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 4v16m8-8H4" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans">
-                <div class="relative">
-                    <img class="w-full h-64 object-cover" src="../images/141d9cd2-a77f-5f36-9b1a-d0ca028311a7 1.svg"
-                        alt="Saint Petersburg">
-                    <button class="absolute top-4 right-4 p-[10px]">
-
-                        <div class="heart-container" title="Like">
-                            <input type="checkbox" class="checkbox" id="Give-It-An-Id">
-                            <div class="svg-container">
-                                <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
-                                    </path>
-                                </svg>
-                                <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
-                                    </path>
-                                </svg>
-                                <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-                                    <polygon points="10,10 20,20"></polygon>
-                                    <polygon points="10,50 20,50"></polygon>
-                                    <polygon points="20,80 30,70"></polygon>
-                                    <polygon points="90,10 80,20"></polygon>
-                                    <polygon points="90,50 80,50"></polygon>
-                                    <polygon points="80,80 70,70"></polygon>
-                                </svg>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-
-                <div class="px-6 py-6">
-                    <h2 class="font-bold text-xl mb-3 text-gray-800 leading-tight">
-                        Tsarskoye Selo: Tarixiy sayohat va rang-barang ekskursiya
-                    </h2>
-                    <p class="text-gray-500 text-sm leading-relaxed mb-6">Tsarskoye Selo: Tarixiy sayohat va rang-barang
-                        ekskursiya
-                    </p>
-
-                    <div class="border-t border-gray-100 mb-6"></div>
-
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <div class="flex items-baseline">
-                                <span class="text-2xl font-black text-gray-900 leading-none">от 2750 ₽</span>
-                                <span class="ml-1 text-gray-500 text-sm italic">/ с чел</span>
-                            </div>
-
-                            <button
-                                class="mt-4 flex items-center justify-between w-full px-4 py-2 border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50 transition">
-                                Vaqt tanlash
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 " fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
+                        <a href="./new.html">
+                            <button class="bg-gray-100 p-6 rounded-full hover:bg-gray-200 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-800" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
+                                        d="M12 4v16m8-8H4" />
                                 </svg>
                             </button>
-                        </div>
-
-                        <button class="bg-gray-100 p-6 rounded-full hover:bg-gray-200 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-800" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 4v16m8-8H4" />
-                            </svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans">
+            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans"
+                data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="relative">
-                    <img class="w-full h-64 object-cover" src="../images/Фото.svg" alt="Saint Petersburg">
-                    <button class="absolute top-4 right-4 p-[10px]">
-
+                    <img class="w-full h-64 object-cover" src="../images/Mask group (1).svg" alt="Saint Petersburg">
+                    <button class="absolute top-4 right-4 p-[10px] ">
                         <div class="heart-container" title="Like">
                             <input type="checkbox" class="checkbox" id="Give-It-An-Id">
                             <div class="svg-container">
@@ -461,50 +394,52 @@
                         </div>
                     </button>
                 </div>
+
                 <div class="px-6 py-6">
                     <h2 class="font-bold text-xl mb-3 text-gray-800 leading-tight">
-                        Shimoliy Kolomnaning sirlari: Tarix va go'zallikka sayohat
+                        Shimoliy Venetsiyaning energiyasi: Sankt-Peterburgdagi kuch joylari
                     </h2>
                     <p class="text-gray-500 text-sm leading-relaxed mb-6">
                         Ermitaj muzeyiga ikki soatlik mini-guruhli sayohat — Qishki saroy tarixi va G'arbiy Yevropa
-                        ustalarining durdona asarlari.
+                        rassomlarining
+                        durdona asarlari.
                     </p>
 
                     <div class="border-t border-gray-100 mb-6"></div>
-
                     <div class="flex items-center justify-between">
                         <div>
                             <div class="flex items-baseline">
                                 <span class="text-2xl font-black text-gray-900 leading-none">от 2750 ₽</span>
-                                <span class="ml-1 text-gray-500 text-sm italic"> с чел</span>
+                                <span class="ml-1 text-gray-500 text-sm italic">/ с чел</span>
                             </div>
 
                             <button
-                                class="mt-4 flex items-center justify-between w-full px-4 py-2 border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50 transition">
-                                Vaqt tanlash
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none"
+                                class=" flex items-center justify-between w-full p-[5px] border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50 transition">
+                                Выбрать время
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2 ml-2" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
                         </div>
-
-                        <button class="bg-gray-100 p-6 rounded-full hover:bg-gray-200 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-800" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 4v16m8-8H4" />
-                            </svg>
-                        </button>
+                        <a href="./new.html">
+                            <button class="bg-gray-100 p-6 rounded-full hover:bg-gray-200 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-800" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4v16m8-8H4" />
+                                </svg>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans">
+            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans"
+                data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="relative">
-                    <img class="w-full h-64 object-cover" src="../images/1 (3) 1.svg" alt="Saint Petersburg">
-                    <button class="absolute top-4 right-4 p-[10px]">
-                        <!-- From Uiverse.io by catraco -->
+                    <img class="w-full h-64 object-cover" src="../images-3/Rectangle 77.png" alt="Saint Petersburg">
+                    <button class="absolute top-4 right-4 p-[10px] ">
                         <div class="heart-container" title="Like">
                             <input type="checkbox" class="checkbox" id="Give-It-An-Id">
                             <div class="svg-container">
@@ -530,16 +465,18 @@
                         </div>
                     </button>
                 </div>
+
                 <div class="px-6 py-6">
                     <h2 class="font-bold text-xl mb-3 text-gray-800 leading-tight">
-                        Imperatorlik hashamati: Buyuk Pyotrning Peterburg bo'ylab sayohati
+                        Shimoliy Venetsiyaning energiyasi: Sankt-Peterburgdagi kuch joylari
                     </h2>
                     <p class="text-gray-500 text-sm leading-relaxed mb-6">
-                        Ermitaj bo'ylab ikki soatlik mini-guruhli sayohat - Qishki saroy tarixi.
+                        Ermitaj muzeyiga ikki soatlik mini-guruhli sayohat — Qishki saroy tarixi va G'arbiy Yevropa
+                        rassomlarining
+                        durdona asarlari.
                     </p>
 
                     <div class="border-t border-gray-100 mb-6"></div>
-
                     <div class="flex items-center justify-between">
                         <div>
                             <div class="flex items-baseline">
@@ -548,30 +485,102 @@
                             </div>
 
                             <button
-                                class="mt-4 flex items-center justify-between w-full px-4 py-2 border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50 transition">
-                                Vaqt tanlash
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none"
+                                class=" flex items-center justify-between w-full p-[5px] border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50 transition">
+                                Выбрать время
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2 ml-2" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
                         </div>
-
-                        <button class="bg-gray-100 p-6 rounded-full hover:bg-gray-200 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-800" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 4v16m8-8H4" />
-                            </svg>
-                        </button>
+                        <a href="./new.html">
+                            <button class="bg-gray-100 p-6 rounded-full hover:bg-gray-200 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-800" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4v16m8-8H4" />
+                                </svg>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans">
+            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans"
+                data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="relative">
-                    <img class="w-full h-64 object-cover" src="../images/detail-malo-koniushennyi-bridge 1.svg"
-                        alt="Saint Petersburg">
+                    <img class="w-full h-64 object-cover" src="../images-2/Rectangle 13.png" alt="Saint Petersburg">
+                    <button class="absolute top-4 right-4 p-[10px] ">
+                        <div class="heart-container" title="Like">
+                            <input type="checkbox" class="checkbox" id="Give-It-An-Id">
+                            <div class="svg-container">
+                                <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                                    </path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                                    </path>
+                                </svg>
+                                <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="10,10 20,20"></polygon>
+                                    <polygon points="10,50 20,50"></polygon>
+                                    <polygon points="20,80 30,70"></polygon>
+                                    <polygon points="90,10 80,20"></polygon>
+                                    <polygon points="90,50 80,50"></polygon>
+                                    <polygon points="80,80 70,70"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="px-6 py-6">
+                    <h2 class="font-bold text-xl mb-3 text-gray-800 leading-tight">
+                        Shimoliy Venetsiyaning energiyasi: Sankt-Peterburgdagi kuch joylari
+                    </h2>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        Ermitaj muzeyiga ikki soatlik mini-guruhli sayohat — Qishki saroy tarixi va G'arbiy Yevropa
+                        rassomlarining
+                        durdona asarlari.
+                    </p>
+
+                    <div class="border-t border-gray-100 mb-6"></div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="flex items-baseline">
+                                <span class="text-2xl font-black text-gray-900 leading-none">от 2750 ₽</span>
+                                <span class="ml-1 text-gray-500 text-sm italic">/ с чел</span>
+                            </div>
+
+                            <button
+                                class=" flex items-center justify-between w-full p-[5px] border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50 transition">
+                                Выбрать время
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2 ml-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="./new.html">
+                            <button class="bg-gray-100 p-6 rounded-full hover:bg-gray-200 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-800" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4v16m8-8H4" />
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans"
+                data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="relative">
+                    <img class="w-full h-64 object-cover" src="../images/Mask group (6).svg" alt="Saint Petersburg">
                     <button class="absolute top-4 right-4 p-[10px]">
                         <!-- From Uiverse.io by catraco -->
                         <div class="heart-container" title="Like">
@@ -606,7 +615,8 @@
                     </h2>
                     <p class="text-gray-500 text-sm leading-relaxed mb-6">
                         Ermitaj muzeyiga ikki soatlik mini-guruhli sayohat — Qishki saroy tarixi va G'arbiy Yevropa
-                        ustalarining durdona asarlari.
+                        rassomlarining
+                        durdona asarlari.
                     </p>
 
                     <div class="border-t border-gray-100 mb-6"></div>
@@ -620,7 +630,7 @@
 
                             <button
                                 class="mt-4 flex items-center justify-between w-full px-4 py-2 border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50 transition">
-                                Vaqt tanlash
+                                Выбрать время
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -639,7 +649,8 @@
                     </div>
                 </div>
             </div>
-            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans">
+            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans"
+                data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="relative">
                     <img class="w-full h-64 object-cover" src="../images/Фото (1).svg" alt="Saint Petersburg">
                     <button class="absolute top-4 right-4 p-[10px]">
@@ -673,11 +684,12 @@
                 <div class="px-6 py-6">
                     <h2 class="font-bold text-xl mb-3 text-gray-800 leading-tight">
                         Sankt-Peterburg mahalliy aholi nigohida:
-                        shaxsiy turistik sayohat
+                        shaxsiy turistik tajriba
                     </h2>
                     <p class="text-gray-500 text-sm leading-relaxed mb-6">
                         Ermitaj muzeyiga ikki soatlik mini-guruhli sayohat — Qishki saroy tarixi va G'arbiy Yevropa
-                        ustalarining durdona asarlari.
+                        rassomlarining
+                        durdona asarlari.
                     </p>
 
                     <div class="border-t border-gray-100 mb-6"></div>
@@ -691,7 +703,7 @@
 
                             <button
                                 class="mt-4 flex items-center justify-between w-full px-4 py-2 border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50 transition">
-                                Vaqt tanlash
+                                Выбрать время
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -710,7 +722,8 @@
                     </div>
                 </div>
             </div>
-            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans">
+            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans"
+                data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="relative">
                     <img class="w-full h-64 object-cover" src="../images/Фото (2).svg" alt="Saint Petersburg">
                     <button class="absolute top-4 right-4 p-[10px]">
@@ -746,7 +759,7 @@
                         Kronshtadt xazinalari: me'moriy va dengiz yodgorliklari bo'ylab sayohat
                     </h2>
                     <p class="text-gray-500 text-sm leading-relaxed mb-6">
-                        Ermitaj bo'ylab ikki soatlik mini-guruhli sayohat - Qishki saroy tarixi.
+                        Ermitaj muzeyiga ikki soatlik mini-guruhli sayohat — Qishki saroy tarixi.
                     </p>
 
                     <div class="border-t border-gray-100 mb-6"></div>
@@ -760,7 +773,7 @@
 
                             <button
                                 class="mt-4 flex items-center justify-between w-full px-4 py-2 border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50 transition">
-                                Vaqt tanlash
+                                Выбрать время
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -779,7 +792,8 @@
                     </div>
                 </div>
             </div>
-            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans">
+            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans"
+                data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="relative">
                     <img class="w-full h-64 object-cover"
                         src="../images/1688079832_pibig-info-p-kamennii-ostrov-piter-oboi-3 1.svg"
@@ -816,8 +830,9 @@
                     <h2 class="font-bold text-xl mb-3 text-gray-800 leading-tight">
                         Kamenni oroliga sayohat: Shahar diqqatga sazovor joylarining sehri
                     </h2>
-                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
-                        Ermitaj bo'ylab ikki soatlik mini-guruhli sayohat - Qishki saroy tarixi.
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">Ermitaj bo'ylab ikki soatlik mini-guruhli
+                        sayohat -
+                        Qishki saroy tarixi.
                     </p>
 
                     <div class="border-t border-gray-100 mb-6"></div>
@@ -831,7 +846,7 @@
 
                             <button
                                 class="mt-4 flex items-center justify-between w-full px-4 py-2 border border-gray-200 rounded-full text-sm text-gray-600 hover:bg-gray-50 transition">
-                                Vaqt tanlash
+                                Выбрать время
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -850,7 +865,8 @@
                     </div>
                 </div>
             </div>
-            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans">
+            <div class="max-w-sm rounded-[2rem] overflow-hidden shadow-lg bg-white border border-gray-100 font-sans"
+                data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="relative">
                     <img class="w-full h-64 object-cover" src="../images/Фото (3).svg" alt="Saint Petersburg">
                     <button class="absolute top-4 right-4 p-[10px]">
@@ -920,7 +936,7 @@
                 </div>
             </div>
         </div>
-        <div class="btn flex items-center justify-center mt-12">
+        <div class="btn flex items-center justify-center mt-12" data-aos="fade-right" data-aos-duration="1000">
             <!-- From Uiverse.io by Javierrocadev -->
             <button
                 class="relative group cursor-pointer text-sky-50  overflow-hidden h-16 w-64 rounded-md bg-sky-800 p-2 flex justify-center items-center font-extrabold">
@@ -937,11 +953,13 @@
                 <div
                     class="absolute top-3 right-20 group-hover:top-12 group-hover:-right-12 z-10 w-14 h-14 rounded-full group-hover:scale-150 group-hover:opacity-50 duration-500 bg-sky-600">
                 </div>
-                <p class="z-10">Ko'proq ko'rish..</p>
+                <p class="z-10">Batafsil ma'lumot..</p>
             </button>
 
 
         </div>
+        </div>
+
     </section>
     <section class="max-w-[1200px] mx-auto px-5 py-16 font-sans text-[#333]">
 
@@ -999,8 +1017,8 @@
                     <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                 </div>
                 <h3 class="text-xl font-bold mb-2">Kreyser Aurora</h3>
-                <p class="text-gray-400 text-sm">Легендарный корабль-музей, ставший одним из главных символов революции
-                    и истории флота.</p>
+                <p class="text-gray-400 text-sm">Afsonaviy muzey kemasi inqilob va dengiz tarixining asosiy ramzlaridan
+                    biriga aylandi.</p>
             </div>
 
         </div>
@@ -1072,7 +1090,7 @@
 
 
     <section class="max-w-7xl mx-auto px-6 pt-20 pb-12 border-b border-gray-100">
-        <h2 class="text-3xl font-extrabold mb-8">Изучайте город с нами!</h2>
+        <h2 class="text-3xl font-extrabold mb-8">Biz bilan shaharni kashf eting!</h2>
         <div class="space-y-6 text-gray-600 text-[15px] leading-relaxed max-w-6xl">
             <p>Shimoliy poytaxtni o'rganishni asosiy diqqatga sazovor joylardan boshlashingizни tavsiya qilamiz: Nevskiy
                 prospektida sayr qiling va shaharning asosiy kitob do'koni joylashgan mashhur Singer Housega qoyil
@@ -1293,6 +1311,12 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+    <script src="../js/sang.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
+<script>
+    AOS.init();
+</script>
 
 </html>
