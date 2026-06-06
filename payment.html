@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To'lov</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-white rounded-2xl shadow-md w-full max-w-md p-6">
+        <h2 class="text-lg font-semibold text-gray-800 mb-5">To'lov usuli</h2>
+
+        <!-- Method tabs -->
+        <div class="grid grid-cols-2 gap-3 mb-5">
+            <button id="btn-card" onclick="selectMethod('card')" class="flex items-center gap-2 px-4 py-3 rounded-xl border-2 border-blue-600 text-gray-800 font-medium text-sm transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="1.8">
+          <rect x="2" y="5" width="20" height="14" rx="2" ry="2" />
+          <line x1="2" y1="10" x2="22" y2="10" />
+        </svg>
+        Karta
+      </button>
+            <button id="btn-paypal" onclick="selectMethod('paypal')" class="flex items-center gap-2 px-4 py-3 rounded-xl border border-gray-200 text-gray-500 font-medium text-sm transition hover:border-gray-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="#003087">
+          <path
+            d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.26-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.99l-.353 2.233a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788l.038-.19.734-4.653.047-.256a.932.932 0 0 1 .92-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.734-4.185z" />
+        </svg>
+        PayPal
+      </button>
+        </div>
+
+        <!-- Card form -->
+        <div id="card-form">
+            <div class="border border-gray-200 rounded-xl px-4 py-3 mb-3 flex items-center justify-between focus-within:border-blue-400 transition">
+                <input id="cardnum" type="text" placeholder="Karta raqami" maxlength="19" oninput="fmtCard(this)" class="flex-1 text-sm text-gray-700 placeholder-gray-400 outline-none bg-transparent">
+                <div class="flex gap-1 ml-2">
+                    <span class="bg-blue-800 text-white text-xs font-bold px-1.5 py-0.5 rounded">VISA</span>
+                    <span class="bg-red-600 text-white text-xs font-bold px-1.5 py-0.5 rounded">MC</span>
+                    <span class="bg-sky-600 text-white text-xs font-bold px-1.5 py-0.5 rounded">AE</span>
+                    <span class="bg-orange-500 text-white text-xs font-bold px-1.5 py-0.5 rounded">DISC</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 mb-3">
+                <div class="border border-gray-200 rounded-xl px-4 py-3 focus-within:border-blue-400 transition">
+                    <input id="expiry" type="text" placeholder="MM / YY" maxlength="7" oninput="fmtExp(this)" class="w-full text-sm text-gray-700 placeholder-gray-400 outline-none bg-transparent">
+                </div>
+                <div class="border border-gray-200 rounded-xl px-4 py-3 flex items-center focus-within:border-blue-400 transition">
+                    <input id="cvv" type="text" placeholder="Xavfsizlik kodi" maxlength="4" oninput="this.value=this.value.replace(/\D/g,'')" class="flex-1 text-sm text-gray-700 placeholder-gray-400 outline-none bg-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 ml-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <rect x="2" y="5" width="20" height="14" rx="2" />
+            <line x1="2" y1="10" x2="22" y2="10" />
+          </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- PayPal form -->
+        <div id="paypal-form" class="hidden mb-3">
+            <div class="border border-gray-200 rounded-xl px-4 py-3 focus-within:border-blue-400 transition">
+                <input type="email" placeholder="PayPal email manzili" class="w-full text-sm text-gray-700 placeholder-gray-400 outline-none bg-transparent">
+            </div>
+        </div>
+
+        <!-- Save checkbox -->
+        <div class="flex items-start gap-2 mb-5">
+            <input type="checkbox" id="save" class="mt-0.5 w-4 h-4 accent-blue-600 cursor-pointer">
+            <label for="save" class="text-xs text-gray-500 leading-relaxed cursor-pointer">
+        To'lov ma'lumotlarini kelajakdagi xaridlar uchun saqlash
+      </label>
+        </div>
+
+        <!-- Pay button -->
+        <button onclick="pay()" class="w-full bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white font-medium text-sm py-3.5 rounded-xl transition">
+      To'lovni amalga oshirish
+    </button>
+    </div>
+
+    <!-- Modal overlay -->
+    <div id="overlay" class="hidden fixed inset-0 bg-black/40 flex items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-2xl shadow-xl p-8 max-w-xs w-full text-center">
+            <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Muvaffaqiyatli to'lov!</h3>
+            <p class="text-sm text-gray-500 leading-relaxed mb-6">
+                Siz muvaffaqiyatli to'lov qildingiz.<br>Xaridingiz uchun rahmat!
+            </p>
+            <button onclick="closeModal()" class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 rounded-xl transition">
+        Yopish
+      </button>
+        </div>
+    </div>
+
+    <script>
+        function selectMethod(type) {
+            const cardBtn = document.getElementById('btn-card');
+            const ppBtn = document.getElementById('btn-paypal');
+            const cardForm = document.getElementById('card-form');
+            const ppForm = document.getElementById('paypal-form');
+
+            if (type === 'card') {
+                cardBtn.className = 'flex items-center gap-2 px-4 py-3 rounded-xl border-2 border-blue-600 text-gray-800 font-medium text-sm transition';
+                ppBtn.className = 'flex items-center gap-2 px-4 py-3 rounded-xl border border-gray-200 text-gray-500 font-medium text-sm transition hover:border-gray-300';
+                cardForm.classList.remove('hidden');
+                ppForm.classList.add('hidden');
+            } else {
+                ppBtn.className = 'flex items-center gap-2 px-4 py-3 rounded-xl border-2 border-blue-600 text-gray-800 font-medium text-sm transition';
+                cardBtn.className = 'flex items-center gap-2 px-4 py-3 rounded-xl border border-gray-200 text-gray-500 font-medium text-sm transition hover:border-gray-300';
+                ppForm.classList.remove('hidden');
+                cardForm.classList.add('hidden');
+            }
+        }
+
+        function fmtCard(el) {
+            let v = el.value.replace(/\D/g, '').substring(0, 16);
+            el.value = v.replace(/(.{4})/g, '$1 ').trim();
+        }
+
+        function fmtExp(el) {
+            let v = el.value.replace(/\D/g, '');
+            if (v.length >= 3) v = v.substring(0, 2) + ' / ' + v.substring(2, 4);
+            el.value = v;
+        }
+
+        function pay() {
+            document.getElementById('overlay').classList.remove('hidden');
+            document.getElementById('overlay').classList.add('flex');
+        }
+
+        function closeModal() {
+            document.getElementById('overlay').classList.add('hidden');
+            document.getElementById('overlay').classList.remove('flex');
+        }
+    </script>
+</body>
+
+</html>
