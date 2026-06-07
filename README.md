@@ -3,4 +3,4 @@
 Salom
 Bizning Web sitga hush kelganlar !
 Bizmimg Web siteda 
-Siz ozingiz Uchun 
+Siz ozingiz Uchun # Tugd
